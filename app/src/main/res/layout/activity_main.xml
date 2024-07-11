@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        android:titleTextColor="@color/white"
+        app:layout_constraintHeight_percent=".06"
+        android:title="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/android_card"
+        android:layout_width="0dp"
+android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintWidth_percent=".95"
+app:layout_constraintBottom_toTopOf="@id/android_button"
+        >
+
+        <ImageView
+            android:id="@+id/android_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+
+            android:contentDescription="@string/android_course_image"
+            android:onClick="onClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/android_button"
+        android:layout_width="387dp"
+        android:layout_height="46dp"
+        android:background="@drawable/button_shape"
+        android:onClick="onClick"
+        android:text="@string/android_course"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/ios_card"
+        app:layout_constraintEnd_toEndOf="@id/android_card"
+        app:layout_constraintStart_toStartOf="@id/android_card"
+        app:layout_constraintTop_toBottomOf="@id/android_card" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ios_card"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/android_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintWidth_percent=".95"
+        app:layout_constraintBottom_toTopOf="@id/ios_button"
+        >
+
+        <ImageView
+            android:id="@+id/ios_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+
+            android:contentDescription="@string/android_course_image"
+            android:onClick="onClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ios" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ios_button"
+        android:layout_width="387dp"
+        android:layout_height="46dp"
+        android:background="@drawable/button_shape"
+        android:onClick="onClick"
+        android:text="@string/ios_course"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/fullStack_card"
+        app:layout_constraintEnd_toEndOf="@id/ios_card"
+        app:layout_constraintStart_toStartOf="@id/ios_card"
+        app:layout_constraintTop_toBottomOf="@id/ios_card" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fullStack_card"
+        android:layout_width="0dp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/ios_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintWidth_percent=".95"
+        app:layout_constraintBottom_toTopOf="@id/fulStack_button"
+        >
+
+        <ImageView
+            android:id="@+id/fullStack_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/fullstack"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/full_stack_course_image"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fulStack_button"
+        android:layout_width="387dp"
+        android:layout_height="46dp"
+        android:background="@drawable/button_shape"
+        android:onClick="onClick"
+        android:text="@string/full_stack"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/ios_card"
+        app:layout_constraintStart_toStartOf="@id/ios_card"
+        app:layout_constraintTop_toBottomOf="@id/fullStack_card" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

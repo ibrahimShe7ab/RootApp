@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">RootAppOne</string>
+    <string name="course_image">Course Image</string>
+    <string name="android_course_image">android course Image</string>
+    <string name="android_course">android course</string>
+    <string name="ios_course">ios course</string>
+    <string name="full_stack">full stack</string>
+    <string name="full_stack_course_image">full stack course image</string>
+</resources>
